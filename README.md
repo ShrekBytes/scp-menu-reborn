@@ -1,4 +1,4 @@
-# SCP Menu Reborn — Simple Customizable Power Menu for KDE Plasma 6.6+
+# SCP Menu Reborn - for KDE Plasma 6.6+
 
 ![SCP Menu Reborn logo](screenshots/scp_menu_reborn.png)
 
