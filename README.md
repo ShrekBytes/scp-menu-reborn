@@ -14,6 +14,15 @@ A clean, minimal KDE Plasma panel widget that provides a customizable power/sess
 - Customizable widget icon
 
 
+## Screenshots
+
+> Screenshot placeholders — replace these paths with your actual images.
+
+![Panel view](screenshots/panel-view.png)
+![Config — General](screenshots/config-general.png)
+![Config — Apps](screenshots/config-apps.png)
+
+
 ## Requirements
 
 - KDE Plasma 6.6+
@@ -29,18 +38,26 @@ A clean, minimal KDE Plasma panel widget that provides a customizable power/sess
 kpackagetool6 -t Plasma/Applet -i .
 ```
 
-restart plasmashell
-``` systemctl --user restart plasma-plasmashell``
-or logout and login
+Restart plasmashell:
+
+```bash
+systemctl --user restart plasma-plasmashell
+```
+
+or log out and log back in.
 
 ### Upgrading existing installation:
 
 ```bash
 kpackagetool6 -t Plasma/Applet -u .
 ```
-restart plasmashell
-``` systemctl --user restart plasma-plasmashell``
-or logout and login
+Restart plasmashell:
+
+```bash
+systemctl --user restart plasma-plasmashell
+```
+
+or log out and log back in.
 
 
 ### Uninstall

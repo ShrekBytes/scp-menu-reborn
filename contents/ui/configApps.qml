@@ -61,6 +61,8 @@ KCM.SimpleKCM {
     ColumnLayout {
         anchors.left: parent.left
         anchors.right: parent.right
+        anchors.top: parent.top
+        anchors.bottom: parent.bottom
         spacing: 0
 
         Kirigami.Separator {
@@ -118,6 +120,7 @@ KCM.SimpleKCM {
         ListView {
             Layout.fillHeight: true
             Layout.fillWidth: true
+            Layout.preferredHeight: Kirigami.Units.gridUnit * 10
             id: userAppList
             clip: true
             spacing: 0
