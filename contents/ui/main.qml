@@ -41,6 +41,13 @@ PlasmoidItem {
     switchWidth: Kirigami.Units.gridUnit * 10
     switchHeight: Kirigami.Units.gridUnit * 12
 
+    // Ensure the popup height always matches current content
+    onExpandedChanged: {
+        if (expanded && Plasmoid.fullRepresentationItem) {
+            Plasmoid.fullRepresentationItem.Layout.preferredHeight = column.implicitHeight
+        }
+    }
+
     onSessionButtonsConfigChanged: rebuildSessionModel()
     Component.onCompleted: rebuildSessionModel()
 
