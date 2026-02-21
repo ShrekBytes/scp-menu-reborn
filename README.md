@@ -1,4 +1,4 @@
-# SCP Menu Reborn — Simple Customizable Power Menu for KDE Plasma 6.6+
+# SCP Menu Reborn — for KDE Plasma 6.6+
 
 A clean, minimal KDE Plasma panel widget that provides a customizable power/session menu with app launcher shortcuts.
 
@@ -15,8 +15,6 @@ A clean, minimal KDE Plasma panel widget that provides a customizable power/sess
 
 
 ## Screenshots
-
-> Screenshot placeholders — replace these paths with your actual images.
 
 ![Panel view](screenshots/preview.png)
 ![Config — General](screenshots/config-general.png)
