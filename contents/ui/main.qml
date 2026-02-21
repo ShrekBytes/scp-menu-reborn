@@ -41,13 +41,6 @@ PlasmoidItem {
     switchWidth: Kirigami.Units.gridUnit * 10
     switchHeight: Kirigami.Units.gridUnit * 12
 
-    // Ensure the popup height always matches current content
-    onExpandedChanged: {
-        if (expanded && Plasmoid.fullRepresentationItem) {
-            Plasmoid.fullRepresentationItem.Layout.preferredHeight = column.implicitHeight
-        }
-    }
-
     onSessionButtonsConfigChanged: rebuildSessionModel()
     Component.onCompleted: rebuildSessionModel()
 
@@ -146,22 +139,25 @@ PlasmoidItem {
         Layout.minimumWidth: Layout.preferredWidth
         Layout.minimumHeight: Layout.preferredHeight
         Layout.maximumWidth: Layout.preferredWidth
-        Layout.maximumHeight: Screen.height
+        Layout.maximumHeight: implicitHeight
 
         ColumnLayout {
             id: column
 
-            anchors.fill: parent
+            anchors.top: parent.top
+            anchors.left: parent.left
+            anchors.right: parent.right
             anchors.leftMargin: Kirigami.Units.smallSpacing
             anchors.rightMargin: Kirigami.Units.smallSpacing
             anchors.topMargin: Kirigami.Units.smallSpacing * 0.5
-            anchors.bottomMargin: Kirigami.Units.smallSpacing * 0.5
             spacing: 0
 
             // App shortcuts section
             ColumnLayout {
                 id: appColumn
                 spacing: 0
+                visible: apps.model.count > 0
+                Layout.fillHeight: false
 
                 Repeater {
                     model: apps.model
@@ -192,7 +188,8 @@ PlasmoidItem {
                 id: powerGrid
                 columns: root.twoColumnLayout ? 2 : 1
                 Layout.fillWidth: true
-                Layout.bottomMargin: Kirigami.Units.smallSpacing
+                Layout.fillHeight: false
+                Layout.bottomMargin: root.hasAnyButton ? Kirigami.Units.smallSpacing : 0
                 rowSpacing: Kirigami.Units.mediumSpacing
                 columnSpacing: Kirigami.Units.mediumSpacing
                 visible: root.hasAnyButton
