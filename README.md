@@ -18,7 +18,7 @@ A clean, minimal KDE Plasma panel widget that provides a customizable power/sess
 
 > Screenshot placeholders — replace these paths with your actual images.
 
-![Panel view](screenshots/panel-view.png)
+![Panel view](screenshots/preview.png)
 ![Config — General](screenshots/config-general.png)
 ![Config — Apps](screenshots/config-apps.png)
 
