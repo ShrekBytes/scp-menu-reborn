@@ -1,8 +1,11 @@
 # SCP Menu Reborn — Simple Customizable Power Menu for KDE Plasma 6.6+
 
+![SCP Menu Reborn logo](screenshots/scp_menu_reborn.png)
+
 A clean, minimal KDE Plasma panel widget that provides a customizable power/session menu with app launcher shortcuts.
 
-> Modified version of [SCP Menu](https://store.kde.org/p/2137217/) (GPL-2.0) by **Dervart**
+See it on the KDE Store: https://store.kde.org/p/2348938/
+
 
 ## Features
 
@@ -10,15 +13,13 @@ A clean, minimal KDE Plasma panel widget that provides a customizable power/sess
 - **6 session buttons**: Lock Screen, Log Out, Restart, Sleep, Shut Down, Hibernate — each independently toggleable
 - **Reorderable** session buttons and app launchers
 - **Two-column or single-column** layout toggle for session buttons
-- **Configurable button borders** for a more defined look (on by default)
+- **Configurable button borders** for a more defined look (enabled by default)
 - Customizable widget icon
 
 
 ## Screenshots
 
-> Screenshot placeholders — replace these paths with your actual images.
-
-![Panel view](screenshots/preview.png)
+![SCP Menu Reborn](screenshots/preview.png)
 ![Config — General](screenshots/config-general.png)
 ![Config — Apps](screenshots/config-apps.png)
 
@@ -32,9 +33,25 @@ A clean, minimal KDE Plasma panel widget that provides a customizable power/sess
 
 ## Installation
 
-### Using kpackagetool (recommended)
+### Option 1: Install from Plasma widgets (recommended)
+
+1. Open panel edit mode and choose **Add/Manage Widgets**.
+2. Click **Get New…** → **Download New Plasma Widgets**.
+3. Search for **"SCP Menu Reborn"**.
+4. Click **Install** and add the widget to your panel.
+
+### Option 2: Install from KDE Store download
+
+1. Go to https://www.pling.com/p/2348938/.
+2. Open the **Files** tab and download the *SCP Menu Reborn* `.plasmoid` file.
+3. In Plasma, open **Add/Manage Widgets** → **Get New…** → **Install Widget From Local File**.
+4. Select the downloaded `.plasmoid` file and complete the installation.
+
+### Option 3: Install from source with kpackagetool6
 
 ```bash
+git clone https://github.com/ShrekBytes/scp-menu-reborn.git
+cd scp-menu-reborn
 kpackagetool6 -t Plasma/Applet -i .
 ```
 
@@ -46,12 +63,15 @@ systemctl --user restart plasma-plasmashell
 
 or log out and log back in.
 
-### Upgrading existing installation:
+### Upgrading an existing kpackagetool6 installation
+
+From inside the project directory:
 
 ```bash
 kpackagetool6 -t Plasma/Applet -u .
 ```
-Restart plasmashell:
+
+Then restart plasmashell again:
 
 ```bash
 systemctl --user restart plasma-plasmashell
@@ -65,3 +85,14 @@ or log out and log back in.
 ```bash
 kpackagetool6 -t Plasma/Applet -r org.kde.plasma.scpmr
 ```
+
+
+## Acknowledgements
+
+- Based on [SCP Menu](https://store.kde.org/p/2137217/) by **Dervart**
+- [USwitch](https://gitlab.com/divinae/uswitch) by **diVinae**
+
+
+## License
+
+Licensed under the [**GNU General Public License v3.0**](LICENSE)
