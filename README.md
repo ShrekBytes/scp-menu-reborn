@@ -1,6 +1,6 @@
 # SCP Menu Reborn - for KDE Plasma 6.6+
 
-<img src="screenshots/scp_menu_reborn.png" alt="SCP Menu Reborn logo" width="44%" />
+<img src="screenshots/scp_menu_reborn.png" alt="SCP Menu Reborn logo" width="33%" />
 
 A clean, minimal KDE Plasma panel widget that provides a customizable power/session menu with app launcher shortcuts.
 
