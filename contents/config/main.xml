@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0 http://www.kde.org/standards/kcfg/1.0/kcfg.xsd">
+  <kcfgfile name="" />
+
+  <group name="General">
+    <entry name="icon" type="String">
+      <default>configure</default>
+    </entry>
+    <entry name="twoColumnLayout" type="bool">
+      <default>true</default>
+    </entry>
+    <entry name="showButtonBorders" type="bool">
+      <default>true</default>
+    </entry>
+    <entry name="sessionButtons" type="String">
+      <default>[{"id":"restart","enabled":true},{"id":"sleep","enabled":true},{"id":"shutdown","enabled":true},{"id":"lock","enabled":false},{"id":"logout","enabled":false},{"id":"hibernate","enabled":false}]</default>
+    </entry>
+  </group>
+  <group name="Apps">
+    <entry name="appList" type="String">
+      <default>[["systemsettings.desktop", { "iconName": "systemsettings" }], ["org.kde.spectacle.desktop", { "iconName": "spectacle" }], ["org.kde.kate.desktop", { "iconName": "kate" }]]</default>
+    </entry>
+  </group>
+
+</kcfg>

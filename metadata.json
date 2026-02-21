@@ -1,0 +1,21 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "shrekbytes@duck.com",
+                "Name": "ShrekBytes"
+            }
+        ],
+        "Category": "Application Launchers",
+        "Description": "Simple Customizable Power Menu for KDE",
+        "Icon": "configure",
+        "Id": "org.kde.plasma.scpmr",
+        "Name": "SCP Menu Reborn",
+        "Version": "1.0.0",
+        "Website": "https://github.com/ShrekBytes/scp-menu-reborn"
+    },
+    "KPackageStructure": "Plasma/Applet",
+    "X-Plasma-API": "declarativeappletscript",
+    "X-Plasma-API-Minimum-Version": "6.6",
+    "X-KDE-ParentApp": ""
+}
