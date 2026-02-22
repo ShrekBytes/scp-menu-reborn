@@ -80,7 +80,7 @@ systemctl --user restart plasma-plasmashell
 or log out and log back in.
 
 
-### Uninstall
+### Uninstalling existing kpackagetool6 installation
 
 ```bash
 kpackagetool6 -t Plasma/Applet -r org.kde.plasma.scpmr
