@@ -4,7 +4,7 @@
 
 A clean, minimal KDE Plasma panel widget that provides a customizable power/session menu with app launcher shortcuts.
 
-See it on the KDE Store: https://store.kde.org/p/2348938/
+See it on the KDE Store: https://store.kde.org/p/2348938
 
 
 ## Features
@@ -42,7 +42,7 @@ See it on the KDE Store: https://store.kde.org/p/2348938/
 
 ### Option 2: Install from KDE Store download
 
-1. Go to https://www.pling.com/p/2348938/.
+1. Go to https://store.kde.org/p/2348938
 2. Open the **Files** tab and download the *SCP Menu Reborn* `.plasmoid` file.
 3. In Plasma, open **Add/Manage Widgets** → **Get New…** → **Install Widget From Local File**.
 4. Select the downloaded `.plasmoid` file and complete the installation.
