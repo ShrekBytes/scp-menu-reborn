@@ -11,7 +11,7 @@
         "Icon": "configure",
         "Id": "org.kde.plasma.scpmr",
         "Name": "SCP Menu Reborn",
-        "Version": "1.1.0-plasma6.6",
+        "Version": "1.1.1-plasma6.6",
         "Website": "https://github.com/ShrekBytes/scp-menu-reborn"
     },
     "KPackageStructure": "Plasma/Applet",
@@ -19,4 +19,3 @@
     "X-Plasma-API-Minimum-Version": "6.6",
     "X-KDE-ParentApp": ""
 }
-

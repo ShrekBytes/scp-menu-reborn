@@ -169,7 +169,7 @@ PlasmoidItem {
                         MouseArea {
                             anchors.fill: parent
                             cursorShape: Qt.PointingHandCursor
-                            onClicked: root.launchApp(model.entryPath)
+                            onClicked: { root.launchApp(model.entryPath); root.expanded = false }
                         }
                     }
                 }
